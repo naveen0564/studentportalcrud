@@ -9,7 +9,7 @@ public class AppConf implements WebMvcConfigurer  {
 	 @Override
 	    public void addCorsMappings(CorsRegistry registry) {
 	        registry.addMapping("/**")
-	                .allowedOrigins("http://localhost:3000")
+	                .allowedOrigins("http://localhost:3000","https://studentportalreact.herokuapp.com")
 	                .allowedMethods("GET","PUT","POST","DELETE");
 	    }
 }
